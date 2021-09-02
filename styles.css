@@ -1,0 +1,69 @@
+:root {
+    --red: #ff0000;
+    --black:  #000000;
+    --blue: #0000ff;
+    --yellow: #ffa500;
+    --green: #008000;
+}
+
+html {
+    display: grid;
+    min-height: 100%;
+}
+
+body {
+    display: grid;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 450px;
+    height: 280px;
+}
+
+#timer-1 {
+    color: var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 0.7em;
+    letter-spacing: 5px;
+    margin-top: 25%;
+}
+
+.value {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--dark);
+    font-size: 4em;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    display: inline-block;
+    padding: 20px;
+    width: 80px;
+    border-radius: 55px;
+}
+
+.days {
+    background: var(--yellow);
+}
+
+.hours {
+    background: var(--green);
+    color: var(--dark);
+}
+
+.minutes {
+    background: var(--blue);
+}
+
+.seconds {
+    background: var(--red);
+}
